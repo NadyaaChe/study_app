@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 /*let gn_var1 = 12;
 let gn_var2 = 10;
 console.log(a);*/
@@ -64,6 +66,67 @@ while(indx < 5){
 
 console.log('the end');
 
+
+function exp (pn_num, pn_stepen){
+	if (pn_stepen === 0) {
+			return 1;
+	}; 
+	
+	if (pn_stepen < 0){
+		vn_step_minus = y
+	};
+	
+
+
+	let result = pn_num;
+	for (let i = 1; i<pn_stepen; i++) {
+		result = result * pn_num;			// это можно записать по другому result *= pn_num;
+console.log("i =" + i, "pn_stepen = " + pn_stepen, "pn_num = " + pn_num, "result =", result);
+
+/*if (pn_stepen < 0){
+		let pn_stepen2 = -1 * pn_stepen
+		for (let i = 1; i<pn_stepen2; i++) {
+		result = 1/(result * pn_num);	
+			};
+		};
+	};*/
+
+return result;
+}
+
+	
+
+
+//console.log(exp(5,-1));
+
+
+	assert.equal(exp(2,0), 1);
+	assert.equal(exp(2,1), 2);
+	assert.equal(exp(2,2), 4);
+	assert.equal(exp(2,3), 8);
+	assert.equal(exp(2,4), 16);
+	assert.equal(exp(2,5), 32);
+	assert.equal(exp(2,10), 1024);
+	assert.equal(exp(2,-1), 0.5);
+	assert.equal(exp(2,-2), 0,25);
+	assert.equal(exp(2,-3), 1/8); //0,125
+	assert.equal(exp(2,-10), 0.0009765625);
+
+
+
+
+
+
+	//console.log ("before ", "i =" + i, "pn_stepen = " + pn_stepen, "result =", result)
+
+
+
+	/*function exponentiation(pn_num, pn_stepen){
+	let vn_cur_stepen = 0;
+	while (vn_cur_stepen <= pn_stepen){
+		vn_exp = pn_num+1;
+};
+}*/
 //пока параметр меньше 5 будет выполняться  КАКОЕ-то условие
 
 
